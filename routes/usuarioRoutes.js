@@ -1,6 +1,6 @@
 import express  from "express";
-import { formularioLogin } from "../controllers/usuarioController.js";
-import { formularioRegistro } from "../controllers/usuarioController.js";
+import { formularioLogin,  formularioRegistro} from "../controllers/usuarioController.js";
+
 
 const router = express.Router();
 //endpoint
