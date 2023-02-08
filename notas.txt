@@ -1,0 +1,43 @@
+MVC
+
+model view controller
+
+es un patro de arquitectura de software que permite la separación de obligaciones de cada 
+pieza de tu codigo
+
+enfatiza la separacion de al logica de programacion con la presentacion
+
+ROUTER EN MVC   
+es el encargado de registrar las url o endpoints que va a soportar nuestra aplicacion
+
+ejemplo si el usuarui accede a clientes el router ya tiene registrada esa ruta y un controlador 
+con una funcion que sabe que modelo debe llmar y que vista mostrar cuando el usuario
+visita esa url
+
+Autoprefixer 
+Complemento PostCSS para analizar CSS y agregar prefijos de proveedores a las reglas de CSS usando valores de  Can I Use . Es recomendado por Google y utilizado en Twitter y Alibaba.
+
+Escriba sus reglas CSS sin prefijos de proveedores (de hecho, olvídese de ellas por completo):
+
+:: marcador de posición {
+   color : gris; 
+} 
+
+. imagen {
+   imagen de fondo :  url (imagen@1x.png); 
+} @media ( resolución mínima : 2 dppx ) { 
+  . imagen {
+     imagen -de-fondo : url (imagen@2x.png); 
+  } 
+}
+
+PostCSS
+
+PostCSS es una herramienta para transformar estilos con complementos JS. Estos complementos pueden filtrar su CSS, admitir variables y mixins, transpilar la sintaxis CSS futura, imágenes en línea y más.
+
+PostCSS es utilizado por líderes de la industria, incluidos Wikipedia, Twitter, Alibaba y JetBrains. El  complemento Autoprefixer  PostCSS es uno de los procesadores CSS más populares.
+
+PostCSS toma un archivo CSS y proporciona una API para analizar y modificar sus reglas (transformándolas en un  árbol de sintaxis abstracta ). Los complementos pueden usar esta API para hacer muchas cosas útiles, por ejemplo, encontrar errores automáticamente o insertar prefijos de proveedores.
+
+crear un  comando para ejecutar postcss con tailwindcss
+"css": "postcss public/css/tailwindcss.css"
