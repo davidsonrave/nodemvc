@@ -1,9 +1,23 @@
 //const express = require ('express');
 import  express from 'express'; // en package json   "type": "module", para poder utilizar esta sintaxis EMACS modulos
 import usuarioRoutes from './routes/usuarioRoutes.js'
-
+import db from './config/db.js'
 // Crear la app
 const app = express()
+
+//habilitar lectura de datos de formulario
+app.use(express.urlencoded({extended:true}))//es una función de middleware integrada en Express. Analiza las solicitudes entrantes con cargas útiles codificadas en urlen y se basa en el analizador corporal.permite leer req.body
+
+//Conexion a la base de datos 
+
+try {
+    await db.authenticate();//metodo de sequelize se utiliza para conectarse con la base de datos y comprueba si las credenciales proporcionadas son correctas
+    db.sync()//va a crear esa tabla si no existe
+    console.log('Conexion correcta a la Base de datos')
+} catch (error) {
+    console.log(error)
+}
+
 
 //habilitar pug
 app.set('view engine', 'pug')//quiero utilizar pug- motor de plantilla aplicar html no hay necesida de importar node lo tien por defecto

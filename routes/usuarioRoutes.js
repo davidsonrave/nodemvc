@@ -1,11 +1,12 @@
 import express  from "express";
-import { formularioLogin,  formularioRegistro ,formularioOlvidePassword} from "../controllers/usuarioController.js";
+import { formularioLogin,  formularioRegistro,formularioOlvidePassword, registrar} from "../controllers/usuarioController.js";
 
 
 const router = express.Router();
 //endpoint
 router.get('/login', formularioLogin );//formularioLogin controlador importado
 router.get('/registro', formularioRegistro)
+router.post('/registro', registrar)//metodo obtenido del formulario con view/auth registro.pug method=post que va enviar a action="/auth/registro" una vez eso va llmar a la funcion registrar y esa funcion va resolver la logica para enviar al modelo
 router.get('/olvide-password', formularioOlvidePassword)
 
 

@@ -52,3 +52,52 @@ se relaciona bastaste con el modelo
 
 ejemplos: 
 primas, sequelize, typeORM, MONGOOSE , bookshelf.js
+
+
+Sequelize es una herramienta ORM Node.js fácil de usar y basada en promesas para Postgres , MySQL , MariaDB , SQLite , DB2 , Microsoft SQL Server y Snowflake . Cuenta con un sólido soporte de transacciones, relaciones, carga ansiosa y diferida, replicación de lectura y más.
+
+MySQL2 es principalmente API compatible con mysqljs y admite la mayoría de las funciones. MySQL2 también ofrece estas características adicionales
+Más rápido / mejor rendimiento
+Declaraciones preparadas
+Protocolo de registro binario de MySQL
+Servidor MySQL
+Soporte extendido para Codificación y Cotejo
+Envoltorio de promesa
+Compresión
+SSL y conmutador de autenticación
+Flujos personalizados
+puesta en común
+
+config
+db
+
+
+Dotenv es un módulo de dependencia cero que carga variables de entorno desde un .envarchivo a process.env. El almacenamiento de la configuración en el entorno separado del código se basa en la metodología de la aplicación The Twelve-Factor .
+El término variable de entorno básicamente significa que estamos en un entorno de momento de desarrollo
+
+y aquí los valores son unos.
+
+Es decir, estas variables o estos valores apuntan a nuestra computadora o podría ser un servidor de
+
+desarrollo.
+
+Pero una vez que se hace el despliegue, una vez que se lleva a un ambiente de producción, esas variables
+
+van a ser diferentes porque el servidor ya se tiene que conectar.
+
+Actualmente, por ejemplo, otra persona que esté en otro país no se podría conectar a mi computadora
+
+si yo no permito las conexiones externas.
+
+Entonces a eso se refiere el término variables de entorno para el entorno de desarrollo local
+
+PROCESS 
+es una variable global disponible en NodeJS que nos ofrece diversas informaciones y utilidades acerca del proceso que está ejecutando un script Node. Contiene diversos métodos, eventos y propiedades que nos sirven no solo para obtener datos del proceso actual, sino también para controlarlo
+
+npm i express-validator Una biblioteca de validadores de cadenas y desinfectantes.
+
+noValidate para qno salga el aviso por defecto de html en el imput al no ingresas un correo bien
+
+mpn i bcrypt Una biblioteca para ayudarte a codificar contraseñas.
+
+carpeta helpers para no recargar tanto de funciones a un controaldor 
