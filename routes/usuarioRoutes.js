@@ -1,11 +1,12 @@
 import express  from "express";
-import { formularioLogin,  formularioRegistro} from "../controllers/usuarioController.js";
+import { formularioLogin,  formularioRegistro ,formularioOlvidePassword} from "../controllers/usuarioController.js";
 
 
 const router = express.Router();
 //endpoint
 router.get('/login', formularioLogin );//formularioLogin controlador importado
 router.get('/registro', formularioRegistro)
+router.get('/olvide-password', formularioOlvidePassword)
 
 
 

@@ -41,3 +41,14 @@ PostCSS toma un archivo CSS y proporciona una API para analizar y modificar sus 
 
 crear un  comando para ejecutar postcss con tailwindcss
 "css": "postcss public/css/tailwindcss.css"
+
+ORM 
+object relational mapper
+
+es una tecnica que se utiliza dodne los datos de una base  de datos son tratatos como objetos utilizando
+un paradigma de programacion orientada a objetos
+
+se relaciona bastaste con el modelo
+
+ejemplos: 
+primas, sequelize, typeORM, MONGOOSE , bookshelf.js
